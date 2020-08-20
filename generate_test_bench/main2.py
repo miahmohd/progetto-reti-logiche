@@ -1,5 +1,5 @@
-test_case = 15000
-skip_case = 0
+test_case = 1500
+skip_case = 1500
 addrs_list = []
 to_encode_list = []
 expected_int_list = []

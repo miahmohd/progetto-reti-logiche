@@ -44,9 +44,10 @@ end project_reti_logiche;
 
 architecture Behavioral of project_reti_logiche is
 
-    type state is (rst_state, read_mem_state, write_mem_state, end_state);
+    type state is (rst_state, read_mem_state, wait_i_data_change, write_mem_state, end_state);
 
     signal current_state            : state := rst_state;
+    signal next_state               : state := rst_state;
 
     signal current_memory_address   : std_logic_vector(15 downto 0);
     signal address_to_encode        : std_logic_vector(7 downto 0);
@@ -86,7 +87,7 @@ begin
         if i_rst = '1' then
             current_state <= rst_state;
 
-        elsif falling_edge(i_clk) then
+        elsif rising_edge(i_clk) then
 
             case current_state is
 
@@ -104,7 +105,8 @@ begin
 
                     if i_start = '1' then
                         o_en <= '1';
-                        current_state <= read_mem_state;
+                        current_state <= wait_i_data_change;
+                        next_state <= read_mem_state;
                     end if;
 
 
@@ -115,6 +117,9 @@ begin
 
                         o_address <= current_memory_address - memory_offset;
                         current_memory_address <= current_memory_address - memory_offset;
+
+                        current_state <= wait_i_data_change;
+                        next_state <= read_mem_state;
 
                     elsif current_memory_address = base_memory then
                          encode_address;
@@ -138,8 +143,15 @@ begin
                         else
                             o_address <= current_memory_address - memory_offset;
                             current_memory_address <= current_memory_address - memory_offset;
+
+                            current_state <= wait_i_data_change;
+                            next_state <= read_mem_state;
                         end if;
                     end if;
+
+
+                when wait_i_data_change => -- wait a clock period in order to read the correct i_data value
+                    current_state <= next_state;
 
                 when write_mem_state =>
                     o_done <= '1';
