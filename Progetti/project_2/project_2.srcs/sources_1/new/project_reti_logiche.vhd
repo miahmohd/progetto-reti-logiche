@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 -- Company: Politecnico di Milano
--- Engineer: Miah Mohd Ehtesham
--- Codice persona: 10583195
+-- Engineers: Miah Mohd Ehtesham, Ouahidi Yassine
+-- Codice persona: 10583195, 10568926
 ----------------------------------------------------------------------------------
 
 
@@ -12,16 +12,10 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 package my_constants is
 
-    constant memory_0 : std_logic_vector := "0000000000000000" ;
-    constant memory_1 : std_logic_vector := "0000000000000001" ;
-    constant memory_2 : std_logic_vector := "0000000000000010" ;
-    constant memory_3 : std_logic_vector := "0000000000000011" ;
-    constant memory_4 : std_logic_vector := "0000000000000100" ;
-    constant memory_5 : std_logic_vector := "0000000000000101" ;
-    constant memory_6 : std_logic_vector := "0000000000000110" ;
-    constant memory_7 : std_logic_vector := "0000000000000111" ;
-    constant memory_8 : std_logic_vector := "0000000000001000" ;
-    constant memory_9 : std_logic_vector := "0000000000001001" ;
+    constant base_memory: std_logic_vector := "0000000000000000";
+    constant address: std_logic_vector := "0000000000001000";
+    constant address_to_write: std_logic_vector := "0000000000001001" ;
+    constant memory_offset: std_logic_vector := "0000000000000001";
 
 end my_constants;
 
@@ -88,23 +82,6 @@ begin
             end if;
         end procedure;
 
-
-        procedure go_to_next_state (constant next_memory : std_logic_vector(15 downto 0)) is
-        begin
-            if is_to_encode = 1 then
-                o_en <= '1';
-                o_we <= '1';
-                o_address <= memory_9;
-
-                current_state <= write_mem_state;
-            else
-                current_memory_address <= next_memory;
-                o_address <= next_memory;
-            end if;
-        end procedure;
-
-
-
     begin
         if i_rst = '1' then
             current_state <= rst_state;
@@ -116,10 +93,10 @@ begin
                 when rst_state =>
                     current_state <= rst_state;
                     is_to_encode := 0;
-                    current_memory_address <= memory_8;
+                    current_memory_address <= address;
 
                     -- reset outputs
-                    o_address <= memory_8;
+                    o_address <= address;
                     o_done <= '0';
                     o_en <= '0';
                     o_we <= '0';
@@ -133,56 +110,35 @@ begin
 
                 when read_mem_state =>
                     -- lettura indirizzo de codificare
-                    if current_memory_address = memory_8 then
+                    if current_memory_address = address then
                         address_to_encode <= '0' & i_data(6 downto 0);
+                        
+                        o_address <= current_memory_address - memory_offset;
+                        current_memory_address <= current_memory_address - memory_offset;
+                    
+                    elsif current_memory_address = base_memory then
+                         encode_address;
+                   
+                         o_en <= '1';
+                         o_we <= '1';
+                         o_address <= address_to_write;
+                         current_state <= write_mem_state;
 
-                        current_memory_address <= memory_7;
-                        o_address <= memory_7;
-
-                    elsif current_memory_address = memory_7 then
+                    else 
                         encode_address;
-                        go_to_next_state(memory_6);
-
-
-                    elsif current_memory_address = memory_6 then
-                        encode_address;
-                        go_to_next_state(memory_5);
-
-
-                    elsif current_memory_address = memory_5 then
-                        encode_address;
-                        go_to_next_state(memory_4);
-
-
-                    elsif current_memory_address = memory_4 then
-                        encode_address;
-                        go_to_next_state(memory_3);
-
-
-                    elsif current_memory_address = memory_3 then
-                        encode_address;
-                        go_to_next_state(memory_2);
-
-
-                    elsif current_memory_address = memory_2 then
-                        encode_address;
-                        go_to_next_state(memory_1);
-
-
-                    elsif current_memory_address = memory_1 then
-                        encode_address;
-                        go_to_next_state(memory_0);
-
-
-                    elsif current_memory_address = memory_0 then
-                        encode_address;
-
-                        o_en <= '1';
-                        o_we <= '1';
-                        o_address <= memory_9;
-
-                        current_state <= write_mem_state;
-
+                        
+                        -- Go to next state
+                        if is_to_encode = 1 then
+                            o_en <= '1';
+                            o_we <= '1';
+                            o_address <= address_to_write;
+                            
+                            current_state <= write_mem_state;
+                            
+                        else
+                            o_address <= current_memory_address - memory_offset;
+                            current_memory_address <= current_memory_address - memory_offset;
+                        end if;
                     end if;
 
                 when write_mem_state =>
@@ -202,6 +158,5 @@ begin
 
         end if;
     end process main;
-
 
 end Behavioral;
