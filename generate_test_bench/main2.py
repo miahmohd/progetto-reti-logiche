@@ -1,4 +1,5 @@
-test_case = 1500
+test_case = 15000
+skip_case = 0
 addrs_list = []
 to_encode_list = []
 expected_int_list = []
@@ -30,7 +31,12 @@ out = """
 
 
 
-with open("out/15000_cases/ram_content.txt") as file:
+with open("out/1500000_cases/ram_content.txt") as file:
+    for i in range(skip_case):
+        skipped = [file.readline() for x in range(8)]
+        file.readline()
+        file.readline()
+        file.readline()
     for i in range(test_case):
         addrs = [int(file.readline()) for x in range(8)]
         addrs_list.append(addrs)
@@ -121,16 +127,16 @@ for i in range(test_case):
     if i>0:
         out += """
          if i={} and is_next=1 then
-            RAM <= (0 => std_logic_vector(to_unsigned( {}, 8)),
-                    1 => std_logic_vector(to_unsigned( {} , 8)),
-                    2 => std_logic_vector(to_unsigned( {} , 8)),
-                    3 => std_logic_vector(to_unsigned( {} , 8)),
-                    4 => std_logic_vector(to_unsigned( {} , 8)),
-                    5 => std_logic_vector(to_unsigned( {} , 8)),
-                    6 => std_logic_vector(to_unsigned( {} , 8)),
-                    7 => std_logic_vector(to_unsigned( {} , 8)),
-                    8 => std_logic_vector(to_unsigned( addrs(i) , 8)),
-        others => (others =>'0'));
+            RAM <= (0 => std_logic_vector(to_unsigned( {}, 8)),\
+1 => std_logic_vector(to_unsigned( {} , 8)),\
+2 => std_logic_vector(to_unsigned( {} , 8)),\
+3 => std_logic_vector(to_unsigned( {} , 8)),\
+4 => std_logic_vector(to_unsigned( {} , 8)),\
+5 => std_logic_vector(to_unsigned( {} , 8)),\
+6 => std_logic_vector(to_unsigned( {} , 8)),\
+7 => std_logic_vector(to_unsigned( {} , 8)),\
+8 => std_logic_vector(to_unsigned( addrs(i) , 8)),\
+others => (others =>'0'));
     end if;
     """.format(i, *addrs_list[i])
 

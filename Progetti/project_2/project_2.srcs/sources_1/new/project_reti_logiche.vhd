@@ -86,7 +86,7 @@ begin
         if i_rst = '1' then
             current_state <= rst_state;
 
-        elsif i_clk'event and i_clk = '0' then
+        elsif falling_edge(i_clk) then
 
             case current_state is
 
@@ -112,29 +112,29 @@ begin
                     -- lettura indirizzo de codificare
                     if current_memory_address = address then
                         address_to_encode <= '0' & i_data(6 downto 0);
-                        
+
                         o_address <= current_memory_address - memory_offset;
                         current_memory_address <= current_memory_address - memory_offset;
-                    
+
                     elsif current_memory_address = base_memory then
                          encode_address;
-                   
+
                          o_en <= '1';
                          o_we <= '1';
                          o_address <= address_to_write;
                          current_state <= write_mem_state;
 
-                    else 
+                    else
                         encode_address;
-                        
+
                         -- Go to next state
                         if is_to_encode = 1 then
                             o_en <= '1';
                             o_we <= '1';
                             o_address <= address_to_write;
-                            
+
                             current_state <= write_mem_state;
-                            
+
                         else
                             o_address <= current_memory_address - memory_offset;
                             current_memory_address <= current_memory_address - memory_offset;
