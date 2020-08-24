@@ -154,9 +154,6 @@ begin
                     current_state <= next_state;
 
                 when write_mem_state =>
-                    o_done <= '1';
-                    o_en <= '0';
-                    o_we <= '0';
                     current_state <= end_state;
 
                 when end_state =>
@@ -165,6 +162,8 @@ begin
                         current_state <= rst_state;
                     else
                         o_done <= '1';
+                        o_en <= '0';
+                        o_we <= '0';
                     end if;
             end case;
 

@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Thu Aug 20 22:32:31 2020
+-- Date        : Mon Aug 24 13:16:18 2020
 -- Host        : Miah-Desktop running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -mode funcsim -nolib -force -file
 --               D:/miah-/Documents/Polimi/Progetto-reti-logiche/Progetti/project_2/project_2.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd
@@ -39,51 +39,38 @@ architecture STRUCTURE of project_reti_logiche is
   signal \address_to_encode[6]_i_5_n_0\ : STD_LOGIC;
   signal current_memory_address0 : STD_LOGIC;
   signal \current_memory_address[0]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address[10]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address[11]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address[12]_i_1_n_0\ : STD_LOGIC;
+  signal \current_memory_address[12]_i_2_n_0\ : STD_LOGIC;
   signal \current_memory_address[12]_i_3_n_0\ : STD_LOGIC;
   signal \current_memory_address[12]_i_4_n_0\ : STD_LOGIC;
   signal \current_memory_address[12]_i_5_n_0\ : STD_LOGIC;
-  signal \current_memory_address[12]_i_6_n_0\ : STD_LOGIC;
-  signal \current_memory_address[13]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address[14]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address[15]_i_2_n_0\ : STD_LOGIC;
-  signal \current_memory_address[15]_i_3_n_0\ : STD_LOGIC;
+  signal \current_memory_address[15]_i_1_n_0\ : STD_LOGIC;
+  signal \current_memory_address[15]_i_4_n_0\ : STD_LOGIC;
   signal \current_memory_address[15]_i_5_n_0\ : STD_LOGIC;
   signal \current_memory_address[15]_i_6_n_0\ : STD_LOGIC;
   signal \current_memory_address[15]_i_7_n_0\ : STD_LOGIC;
-  signal \current_memory_address[1]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address[2]_i_1_n_0\ : STD_LOGIC;
   signal \current_memory_address[3]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address[4]_i_1_n_0\ : STD_LOGIC;
+  signal \current_memory_address[4]_i_2_n_0\ : STD_LOGIC;
   signal \current_memory_address[4]_i_3_n_0\ : STD_LOGIC;
   signal \current_memory_address[4]_i_4_n_0\ : STD_LOGIC;
   signal \current_memory_address[4]_i_5_n_0\ : STD_LOGIC;
-  signal \current_memory_address[4]_i_6_n_0\ : STD_LOGIC;
-  signal \current_memory_address[5]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address[6]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address[7]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address[8]_i_1_n_0\ : STD_LOGIC;
+  signal \current_memory_address[8]_i_2_n_0\ : STD_LOGIC;
   signal \current_memory_address[8]_i_3_n_0\ : STD_LOGIC;
   signal \current_memory_address[8]_i_4_n_0\ : STD_LOGIC;
   signal \current_memory_address[8]_i_5_n_0\ : STD_LOGIC;
-  signal \current_memory_address[8]_i_6_n_0\ : STD_LOGIC;
-  signal \current_memory_address[9]_i_1_n_0\ : STD_LOGIC;
-  signal \current_memory_address_reg[12]_i_2_n_0\ : STD_LOGIC;
-  signal \current_memory_address_reg[12]_i_2_n_1\ : STD_LOGIC;
-  signal \current_memory_address_reg[12]_i_2_n_2\ : STD_LOGIC;
-  signal \current_memory_address_reg[12]_i_2_n_3\ : STD_LOGIC;
-  signal \current_memory_address_reg[15]_i_4_n_2\ : STD_LOGIC;
-  signal \current_memory_address_reg[15]_i_4_n_3\ : STD_LOGIC;
-  signal \current_memory_address_reg[4]_i_2_n_0\ : STD_LOGIC;
-  signal \current_memory_address_reg[4]_i_2_n_1\ : STD_LOGIC;
-  signal \current_memory_address_reg[4]_i_2_n_2\ : STD_LOGIC;
-  signal \current_memory_address_reg[4]_i_2_n_3\ : STD_LOGIC;
-  signal \current_memory_address_reg[8]_i_2_n_0\ : STD_LOGIC;
-  signal \current_memory_address_reg[8]_i_2_n_1\ : STD_LOGIC;
-  signal \current_memory_address_reg[8]_i_2_n_2\ : STD_LOGIC;
-  signal \current_memory_address_reg[8]_i_2_n_3\ : STD_LOGIC;
+  signal \current_memory_address_reg[12]_i_1_n_0\ : STD_LOGIC;
+  signal \current_memory_address_reg[12]_i_1_n_1\ : STD_LOGIC;
+  signal \current_memory_address_reg[12]_i_1_n_2\ : STD_LOGIC;
+  signal \current_memory_address_reg[12]_i_1_n_3\ : STD_LOGIC;
+  signal \current_memory_address_reg[15]_i_3_n_2\ : STD_LOGIC;
+  signal \current_memory_address_reg[15]_i_3_n_3\ : STD_LOGIC;
+  signal \current_memory_address_reg[4]_i_1_n_0\ : STD_LOGIC;
+  signal \current_memory_address_reg[4]_i_1_n_1\ : STD_LOGIC;
+  signal \current_memory_address_reg[4]_i_1_n_2\ : STD_LOGIC;
+  signal \current_memory_address_reg[4]_i_1_n_3\ : STD_LOGIC;
+  signal \current_memory_address_reg[8]_i_1_n_0\ : STD_LOGIC;
+  signal \current_memory_address_reg[8]_i_1_n_1\ : STD_LOGIC;
+  signal \current_memory_address_reg[8]_i_1_n_2\ : STD_LOGIC;
+  signal \current_memory_address_reg[8]_i_1_n_3\ : STD_LOGIC;
   signal \current_memory_address_reg_n_0_[0]\ : STD_LOGIC;
   signal \current_memory_address_reg_n_0_[10]\ : STD_LOGIC;
   signal \current_memory_address_reg_n_0_[11]\ : STD_LOGIC;
@@ -103,6 +90,7 @@ architecture STRUCTURE of project_reti_logiche is
   signal current_state : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \current_state[0]_i_2_n_0\ : STD_LOGIC;
   signal \current_state[0]_i_3_n_0\ : STD_LOGIC;
+  signal \current_state[0]_i_4_n_0\ : STD_LOGIC;
   signal \current_state[2]_i_1_n_0\ : STD_LOGIC;
   signal \current_state_reg_n_0_[0]\ : STD_LOGIC;
   signal \current_state_reg_n_0_[1]\ : STD_LOGIC;
@@ -115,10 +103,12 @@ architecture STRUCTURE of project_reti_logiche is
   signal minusOp : STD_LOGIC_VECTOR ( 15 downto 1 );
   signal next_state : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \next_state[0]_i_1_n_0\ : STD_LOGIC;
+  signal o_address0 : STD_LOGIC;
   signal \o_address[0]_i_1_n_0\ : STD_LOGIC;
   signal \o_address[15]_i_1_n_0\ : STD_LOGIC;
-  signal \o_address[3]_i_1_n_0\ : STD_LOGIC;
   signal \o_address[3]_i_2_n_0\ : STD_LOGIC;
+  signal \o_address[3]_i_3_n_0\ : STD_LOGIC;
+  signal \o_address[3]_i_4_n_0\ : STD_LOGIC;
   signal o_address_OBUF : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal o_data0 : STD_LOGIC;
   signal \o_data[0]_i_1_n_0\ : STD_LOGIC;
@@ -161,58 +151,42 @@ architecture STRUCTURE of project_reti_logiche is
   signal o_en_i_3_n_0 : STD_LOGIC;
   signal o_we_OBUF : STD_LOGIC;
   signal o_we_i_1_n_0 : STD_LOGIC;
-  signal \NLW_current_memory_address_reg[15]_i_4_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
-  signal \NLW_current_memory_address_reg[15]_i_4_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_current_memory_address_reg[15]_i_3_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
+  signal \NLW_current_memory_address_reg[15]_i_3_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_o_data_reg[7]_i_5_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 to 2 );
   signal \NLW_o_data_reg[7]_i_5_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \current_memory_address[0]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \current_memory_address[10]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \current_memory_address[11]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \current_memory_address[12]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \current_memory_address[13]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \current_memory_address[14]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \current_memory_address[15]_i_2\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \current_memory_address[1]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \current_memory_address[2]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \current_memory_address[3]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \current_memory_address[4]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \current_memory_address[5]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \current_memory_address[6]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \current_memory_address[7]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \current_memory_address[8]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \current_memory_address[9]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \current_state[0]_i_3\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \current_state[1]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \current_state[2]_i_2\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \next_state[0]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \o_address[0]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \o_address[3]_i_2\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \o_data[0]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \o_data[1]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \o_data[2]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \o_data[3]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \o_data[4]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \o_data[5]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \o_data[6]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of o_done_i_2 : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of o_en_i_2 : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of o_we_i_1 : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \current_memory_address[0]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \current_memory_address[3]_i_1\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \current_state[0]_i_3\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \current_state[0]_i_4\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \current_state[1]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \current_state[2]_i_2\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \o_address[0]_i_1\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \o_address[3]_i_4\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \o_data[0]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \o_data[1]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \o_data[2]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \o_data[3]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \o_data[4]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \o_data[6]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of o_en_i_2 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of o_we_i_1 : label is "soft_lutpair3";
 begin
 \address_to_encode[6]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0004"
+      INIT => X"0008"
     )
         port map (
-      I0 => \current_state_reg_n_0_[1]\,
-      I1 => \current_state_reg_n_0_[0]\,
+      I0 => \current_state_reg_n_0_[0]\,
+      I1 => \address_to_encode[6]_i_2_n_0\,
       I2 => i_rst_IBUF,
-      I3 => \address_to_encode[6]_i_2_n_0\,
+      I3 => \current_state_reg_n_0_[1]\,
       O => address_to_encode0
     );
 \address_to_encode[6]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFFFFFFFFFFEFF"
+      INIT => X"0000000000000100"
     )
         port map (
       I0 => \address_to_encode[6]_i_3_n_0\,
@@ -334,48 +308,30 @@ begin
       Q => address_to_encode(6),
       R => '0'
     );
-\current_memory_address[0]_i_1\: unisim.vcomponents.LUT2
+\current_memory_address[0]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"2"
+      INIT => X"38"
     )
         port map (
       I0 => \current_state_reg_n_0_[0]\,
-      I1 => \current_memory_address_reg_n_0_[0]\,
+      I1 => current_memory_address0,
+      I2 => \current_memory_address_reg_n_0_[0]\,
       O => \current_memory_address[0]_i_1_n_0\
     );
-\current_memory_address[10]_i_1\: unisim.vcomponents.LUT2
+\current_memory_address[12]_i_2\: unisim.vcomponents.LUT1
     generic map(
-      INIT => X"8"
+      INIT => X"1"
     )
         port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(10),
-      O => \current_memory_address[10]_i_1_n_0\
-    );
-\current_memory_address[11]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(11),
-      O => \current_memory_address[11]_i_1_n_0\
-    );
-\current_memory_address[12]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(12),
-      O => \current_memory_address[12]_i_1_n_0\
+      I0 => \current_memory_address_reg_n_0_[12]\,
+      O => \current_memory_address[12]_i_2_n_0\
     );
 \current_memory_address[12]_i_3\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[12]\,
+      I0 => \current_memory_address_reg_n_0_[11]\,
       O => \current_memory_address[12]_i_3_n_0\
     );
 \current_memory_address[12]_i_4\: unisim.vcomponents.LUT1
@@ -383,7 +339,7 @@ begin
       INIT => X"1"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[11]\,
+      I0 => \current_memory_address_reg_n_0_[10]\,
       O => \current_memory_address[12]_i_4_n_0\
     );
 \current_memory_address[12]_i_5\: unisim.vcomponents.LUT1
@@ -391,59 +347,33 @@ begin
       INIT => X"1"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[10]\,
+      I0 => \current_memory_address_reg_n_0_[9]\,
       O => \current_memory_address[12]_i_5_n_0\
     );
-\current_memory_address[12]_i_6\: unisim.vcomponents.LUT1
+\current_memory_address[15]_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"1"
+      INIT => X"2"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[9]\,
-      O => \current_memory_address[12]_i_6_n_0\
+      I0 => current_memory_address0,
+      I1 => \current_state_reg_n_0_[0]\,
+      O => \current_memory_address[15]_i_1_n_0\
     );
-\current_memory_address[13]_i_1\: unisim.vcomponents.LUT2
+\current_memory_address[15]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"8"
+      INIT => X"AA20AAAA"
     )
         port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(13),
-      O => \current_memory_address[13]_i_1_n_0\
-    );
-\current_memory_address[14]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(14),
-      O => \current_memory_address[14]_i_1_n_0\
-    );
-\current_memory_address[15]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"02AAAAAA"
-    )
-        port map (
-      I0 => \o_address[3]_i_1_n_0\,
+      I0 => o_address0,
       I1 => \o_data[7]_i_3_n_0\,
-      I2 => \current_memory_address[15]_i_3_n_0\,
+      I2 => \current_memory_address[15]_i_4_n_0\,
       I3 => \address_to_encode[6]_i_2_n_0\,
       I4 => \current_state_reg_n_0_[0]\,
       O => current_memory_address0
     );
-\current_memory_address[15]_i_2\: unisim.vcomponents.LUT2
+\current_memory_address[15]_i_4\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(15),
-      O => \current_memory_address[15]_i_2_n_0\
-    );
-\current_memory_address[15]_i_3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
+      INIT => X"FFFFFFFFFFFFFFFE"
     )
         port map (
       I0 => \address_to_encode[6]_i_3_n_0\,
@@ -452,7 +382,7 @@ begin
       I3 => \current_memory_address_reg_n_0_[2]\,
       I4 => \current_memory_address_reg_n_0_[3]\,
       I5 => \address_to_encode[6]_i_4_n_0\,
-      O => \current_memory_address[15]_i_3_n_0\
+      O => \current_memory_address[15]_i_4_n_0\
     );
 \current_memory_address[15]_i_5\: unisim.vcomponents.LUT1
     generic map(
@@ -478,48 +408,31 @@ begin
       I0 => \current_memory_address_reg_n_0_[13]\,
       O => \current_memory_address[15]_i_7_n_0\
     );
-\current_memory_address[1]_i_1\: unisim.vcomponents.LUT2
+\current_memory_address[3]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(1),
-      O => \current_memory_address[1]_i_1_n_0\
-    );
-\current_memory_address[2]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(2),
-      O => \current_memory_address[2]_i_1_n_0\
-    );
-\current_memory_address[3]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"B"
+      INIT => X"BFB0"
     )
         port map (
       I0 => minusOp(3),
       I1 => \current_state_reg_n_0_[0]\,
+      I2 => current_memory_address0,
+      I3 => \current_memory_address_reg_n_0_[3]\,
       O => \current_memory_address[3]_i_1_n_0\
     );
-\current_memory_address[4]_i_1\: unisim.vcomponents.LUT2
+\current_memory_address[4]_i_2\: unisim.vcomponents.LUT1
     generic map(
-      INIT => X"8"
+      INIT => X"1"
     )
         port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(4),
-      O => \current_memory_address[4]_i_1_n_0\
+      I0 => \current_memory_address_reg_n_0_[4]\,
+      O => \current_memory_address[4]_i_2_n_0\
     );
 \current_memory_address[4]_i_3\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[4]\,
+      I0 => \current_memory_address_reg_n_0_[3]\,
       O => \current_memory_address[4]_i_3_n_0\
     );
 \current_memory_address[4]_i_4\: unisim.vcomponents.LUT1
@@ -527,7 +440,7 @@ begin
       INIT => X"1"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[3]\,
+      I0 => \current_memory_address_reg_n_0_[2]\,
       O => \current_memory_address[4]_i_4_n_0\
     );
 \current_memory_address[4]_i_5\: unisim.vcomponents.LUT1
@@ -535,59 +448,23 @@ begin
       INIT => X"1"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[2]\,
+      I0 => \current_memory_address_reg_n_0_[1]\,
       O => \current_memory_address[4]_i_5_n_0\
     );
-\current_memory_address[4]_i_6\: unisim.vcomponents.LUT1
+\current_memory_address[8]_i_2\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[1]\,
-      O => \current_memory_address[4]_i_6_n_0\
-    );
-\current_memory_address[5]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(5),
-      O => \current_memory_address[5]_i_1_n_0\
-    );
-\current_memory_address[6]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(6),
-      O => \current_memory_address[6]_i_1_n_0\
-    );
-\current_memory_address[7]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(7),
-      O => \current_memory_address[7]_i_1_n_0\
-    );
-\current_memory_address[8]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(8),
-      O => \current_memory_address[8]_i_1_n_0\
+      I0 => \current_memory_address_reg_n_0_[8]\,
+      O => \current_memory_address[8]_i_2_n_0\
     );
 \current_memory_address[8]_i_3\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[8]\,
+      I0 => \current_memory_address_reg_n_0_[7]\,
       O => \current_memory_address[8]_i_3_n_0\
     );
 \current_memory_address[8]_i_4\: unisim.vcomponents.LUT1
@@ -595,7 +472,7 @@ begin
       INIT => X"1"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[7]\,
+      I0 => \current_memory_address_reg_n_0_[6]\,
       O => \current_memory_address[8]_i_4_n_0\
     );
 \current_memory_address[8]_i_5\: unisim.vcomponents.LUT1
@@ -603,25 +480,8 @@ begin
       INIT => X"1"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[6]\,
-      O => \current_memory_address[8]_i_5_n_0\
-    );
-\current_memory_address[8]_i_6\: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"1"
-    )
-        port map (
       I0 => \current_memory_address_reg_n_0_[5]\,
-      O => \current_memory_address[8]_i_6_n_0\
-    );
-\current_memory_address[9]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"8"
-    )
-        port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(9),
-      O => \current_memory_address[9]_i_1_n_0\
+      O => \current_memory_address[8]_i_5_n_0\
     );
 \current_memory_address_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -629,7 +489,7 @@ begin
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => current_memory_address0,
+      CE => '1',
       D => \current_memory_address[0]_i_1_n_0\,
       Q => \current_memory_address_reg_n_0_[0]\,
       R => '0'
@@ -641,9 +501,9 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[10]_i_1_n_0\,
+      D => minusOp(10),
       Q => \current_memory_address_reg_n_0_[10]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
 \current_memory_address_reg[11]\: unisim.vcomponents.FDRE
     generic map(
@@ -652,9 +512,9 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[11]_i_1_n_0\,
+      D => minusOp(11),
       Q => \current_memory_address_reg_n_0_[11]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
 \current_memory_address_reg[12]\: unisim.vcomponents.FDRE
     generic map(
@@ -663,27 +523,27 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[12]_i_1_n_0\,
+      D => minusOp(12),
       Q => \current_memory_address_reg_n_0_[12]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
-\current_memory_address_reg[12]_i_2\: unisim.vcomponents.CARRY4
+\current_memory_address_reg[12]_i_1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \current_memory_address_reg[8]_i_2_n_0\,
-      CO(3) => \current_memory_address_reg[12]_i_2_n_0\,
-      CO(2) => \current_memory_address_reg[12]_i_2_n_1\,
-      CO(1) => \current_memory_address_reg[12]_i_2_n_2\,
-      CO(0) => \current_memory_address_reg[12]_i_2_n_3\,
+      CI => \current_memory_address_reg[8]_i_1_n_0\,
+      CO(3) => \current_memory_address_reg[12]_i_1_n_0\,
+      CO(2) => \current_memory_address_reg[12]_i_1_n_1\,
+      CO(1) => \current_memory_address_reg[12]_i_1_n_2\,
+      CO(0) => \current_memory_address_reg[12]_i_1_n_3\,
       CYINIT => '0',
       DI(3) => \current_memory_address_reg_n_0_[12]\,
       DI(2) => \current_memory_address_reg_n_0_[11]\,
       DI(1) => \current_memory_address_reg_n_0_[10]\,
       DI(0) => \current_memory_address_reg_n_0_[9]\,
       O(3 downto 0) => minusOp(12 downto 9),
-      S(3) => \current_memory_address[12]_i_3_n_0\,
-      S(2) => \current_memory_address[12]_i_4_n_0\,
-      S(1) => \current_memory_address[12]_i_5_n_0\,
-      S(0) => \current_memory_address[12]_i_6_n_0\
+      S(3) => \current_memory_address[12]_i_2_n_0\,
+      S(2) => \current_memory_address[12]_i_3_n_0\,
+      S(1) => \current_memory_address[12]_i_4_n_0\,
+      S(0) => \current_memory_address[12]_i_5_n_0\
     );
 \current_memory_address_reg[13]\: unisim.vcomponents.FDRE
     generic map(
@@ -692,9 +552,9 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[13]_i_1_n_0\,
+      D => minusOp(13),
       Q => \current_memory_address_reg_n_0_[13]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
 \current_memory_address_reg[14]\: unisim.vcomponents.FDRE
     generic map(
@@ -703,9 +563,9 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[14]_i_1_n_0\,
+      D => minusOp(14),
       Q => \current_memory_address_reg_n_0_[14]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
 \current_memory_address_reg[15]\: unisim.vcomponents.FDRE
     generic map(
@@ -714,21 +574,21 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[15]_i_2_n_0\,
+      D => minusOp(15),
       Q => \current_memory_address_reg_n_0_[15]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
-\current_memory_address_reg[15]_i_4\: unisim.vcomponents.CARRY4
+\current_memory_address_reg[15]_i_3\: unisim.vcomponents.CARRY4
      port map (
-      CI => \current_memory_address_reg[12]_i_2_n_0\,
-      CO(3 downto 2) => \NLW_current_memory_address_reg[15]_i_4_CO_UNCONNECTED\(3 downto 2),
-      CO(1) => \current_memory_address_reg[15]_i_4_n_2\,
-      CO(0) => \current_memory_address_reg[15]_i_4_n_3\,
+      CI => \current_memory_address_reg[12]_i_1_n_0\,
+      CO(3 downto 2) => \NLW_current_memory_address_reg[15]_i_3_CO_UNCONNECTED\(3 downto 2),
+      CO(1) => \current_memory_address_reg[15]_i_3_n_2\,
+      CO(0) => \current_memory_address_reg[15]_i_3_n_3\,
       CYINIT => '0',
       DI(3 downto 2) => B"00",
       DI(1) => \current_memory_address_reg_n_0_[14]\,
       DI(0) => \current_memory_address_reg_n_0_[13]\,
-      O(3) => \NLW_current_memory_address_reg[15]_i_4_O_UNCONNECTED\(3),
+      O(3) => \NLW_current_memory_address_reg[15]_i_3_O_UNCONNECTED\(3),
       O(2 downto 0) => minusOp(15 downto 13),
       S(3) => '0',
       S(2) => \current_memory_address[15]_i_5_n_0\,
@@ -742,9 +602,9 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[1]_i_1_n_0\,
+      D => minusOp(1),
       Q => \current_memory_address_reg_n_0_[1]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
 \current_memory_address_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -753,9 +613,9 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[2]_i_1_n_0\,
+      D => minusOp(2),
       Q => \current_memory_address_reg_n_0_[2]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
 \current_memory_address_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -763,7 +623,7 @@ begin
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => current_memory_address0,
+      CE => '1',
       D => \current_memory_address[3]_i_1_n_0\,
       Q => \current_memory_address_reg_n_0_[3]\,
       R => '0'
@@ -775,27 +635,27 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[4]_i_1_n_0\,
+      D => minusOp(4),
       Q => \current_memory_address_reg_n_0_[4]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
-\current_memory_address_reg[4]_i_2\: unisim.vcomponents.CARRY4
+\current_memory_address_reg[4]_i_1\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => \current_memory_address_reg[4]_i_2_n_0\,
-      CO(2) => \current_memory_address_reg[4]_i_2_n_1\,
-      CO(1) => \current_memory_address_reg[4]_i_2_n_2\,
-      CO(0) => \current_memory_address_reg[4]_i_2_n_3\,
+      CO(3) => \current_memory_address_reg[4]_i_1_n_0\,
+      CO(2) => \current_memory_address_reg[4]_i_1_n_1\,
+      CO(1) => \current_memory_address_reg[4]_i_1_n_2\,
+      CO(0) => \current_memory_address_reg[4]_i_1_n_3\,
       CYINIT => \current_memory_address_reg_n_0_[0]\,
       DI(3) => \current_memory_address_reg_n_0_[4]\,
       DI(2) => \current_memory_address_reg_n_0_[3]\,
       DI(1) => \current_memory_address_reg_n_0_[2]\,
       DI(0) => \current_memory_address_reg_n_0_[1]\,
       O(3 downto 0) => minusOp(4 downto 1),
-      S(3) => \current_memory_address[4]_i_3_n_0\,
-      S(2) => \current_memory_address[4]_i_4_n_0\,
-      S(1) => \current_memory_address[4]_i_5_n_0\,
-      S(0) => \current_memory_address[4]_i_6_n_0\
+      S(3) => \current_memory_address[4]_i_2_n_0\,
+      S(2) => \current_memory_address[4]_i_3_n_0\,
+      S(1) => \current_memory_address[4]_i_4_n_0\,
+      S(0) => \current_memory_address[4]_i_5_n_0\
     );
 \current_memory_address_reg[5]\: unisim.vcomponents.FDRE
     generic map(
@@ -804,9 +664,9 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[5]_i_1_n_0\,
+      D => minusOp(5),
       Q => \current_memory_address_reg_n_0_[5]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
 \current_memory_address_reg[6]\: unisim.vcomponents.FDRE
     generic map(
@@ -815,9 +675,9 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[6]_i_1_n_0\,
+      D => minusOp(6),
       Q => \current_memory_address_reg_n_0_[6]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
 \current_memory_address_reg[7]\: unisim.vcomponents.FDRE
     generic map(
@@ -826,9 +686,9 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[7]_i_1_n_0\,
+      D => minusOp(7),
       Q => \current_memory_address_reg_n_0_[7]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
 \current_memory_address_reg[8]\: unisim.vcomponents.FDRE
     generic map(
@@ -837,27 +697,27 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[8]_i_1_n_0\,
+      D => minusOp(8),
       Q => \current_memory_address_reg_n_0_[8]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
-\current_memory_address_reg[8]_i_2\: unisim.vcomponents.CARRY4
+\current_memory_address_reg[8]_i_1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \current_memory_address_reg[4]_i_2_n_0\,
-      CO(3) => \current_memory_address_reg[8]_i_2_n_0\,
-      CO(2) => \current_memory_address_reg[8]_i_2_n_1\,
-      CO(1) => \current_memory_address_reg[8]_i_2_n_2\,
-      CO(0) => \current_memory_address_reg[8]_i_2_n_3\,
+      CI => \current_memory_address_reg[4]_i_1_n_0\,
+      CO(3) => \current_memory_address_reg[8]_i_1_n_0\,
+      CO(2) => \current_memory_address_reg[8]_i_1_n_1\,
+      CO(1) => \current_memory_address_reg[8]_i_1_n_2\,
+      CO(0) => \current_memory_address_reg[8]_i_1_n_3\,
       CYINIT => '0',
       DI(3) => \current_memory_address_reg_n_0_[8]\,
       DI(2) => \current_memory_address_reg_n_0_[7]\,
       DI(1) => \current_memory_address_reg_n_0_[6]\,
       DI(0) => \current_memory_address_reg_n_0_[5]\,
       O(3 downto 0) => minusOp(8 downto 5),
-      S(3) => \current_memory_address[8]_i_3_n_0\,
-      S(2) => \current_memory_address[8]_i_4_n_0\,
-      S(1) => \current_memory_address[8]_i_5_n_0\,
-      S(0) => \current_memory_address[8]_i_6_n_0\
+      S(3) => \current_memory_address[8]_i_2_n_0\,
+      S(2) => \current_memory_address[8]_i_3_n_0\,
+      S(1) => \current_memory_address[8]_i_4_n_0\,
+      S(0) => \current_memory_address[8]_i_5_n_0\
     );
 \current_memory_address_reg[9]\: unisim.vcomponents.FDRE
     generic map(
@@ -866,54 +726,67 @@ begin
         port map (
       C => i_clk_IBUF_BUFG,
       CE => current_memory_address0,
-      D => \current_memory_address[9]_i_1_n_0\,
+      D => minusOp(9),
       Q => \current_memory_address_reg_n_0_[9]\,
-      R => '0'
+      R => \current_memory_address[15]_i_1_n_0\
     );
 \current_state[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"8888B88888BBB888"
+      INIT => X"88B8BBBB88B88888"
     )
         port map (
       I0 => i_start_IBUF,
       I1 => \current_state_reg_n_0_[2]\,
       I2 => next_state(0),
-      I3 => \current_state_reg_n_0_[1]\,
-      I4 => \current_state_reg_n_0_[0]\,
+      I3 => \current_state_reg_n_0_[0]\,
+      I4 => \current_state_reg_n_0_[1]\,
       I5 => \current_state[0]_i_2_n_0\,
       O => current_state(0)
     );
 \current_state[0]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"5555555555555754"
+      INIT => X"AAA8AAA800000020"
     )
         port map (
-      I0 => \o_data[7]_i_3_n_0\,
-      I1 => \address_to_encode[6]_i_4_n_0\,
-      I2 => \current_memory_address_reg_n_0_[2]\,
-      I3 => \current_memory_address_reg_n_0_[3]\,
-      I4 => \current_state[0]_i_3_n_0\,
-      I5 => \address_to_encode[6]_i_3_n_0\,
+      I0 => \current_state_reg_n_0_[0]\,
+      I1 => \address_to_encode[6]_i_3_n_0\,
+      I2 => \current_state[0]_i_3_n_0\,
+      I3 => \address_to_encode[6]_i_4_n_0\,
+      I4 => \current_state[0]_i_4_n_0\,
+      I5 => \o_data[7]_i_3_n_0\,
       O => \current_state[0]_i_2_n_0\
     );
-\current_state[0]_i_3\: unisim.vcomponents.LUT2
+\current_state[0]_i_3\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"E"
+      INIT => X"FFEF"
     )
         port map (
-      I0 => \current_memory_address_reg_n_0_[1]\,
-      I1 => \current_memory_address_reg_n_0_[0]\,
+      I0 => \current_memory_address_reg_n_0_[0]\,
+      I1 => \current_memory_address_reg_n_0_[1]\,
+      I2 => \current_memory_address_reg_n_0_[3]\,
+      I3 => \current_memory_address_reg_n_0_[2]\,
       O => \current_state[0]_i_3_n_0\
+    );
+\current_state[0]_i_4\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => \current_memory_address_reg_n_0_[0]\,
+      I1 => \current_memory_address_reg_n_0_[1]\,
+      I2 => \current_memory_address_reg_n_0_[2]\,
+      I3 => \current_memory_address_reg_n_0_[3]\,
+      O => \current_state[0]_i_4_n_0\
     );
 \current_state[1]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"BB10"
+      INIT => X"88DC"
     )
         port map (
       I0 => \current_state_reg_n_0_[2]\,
-      I1 => \current_state_reg_n_0_[1]\,
+      I1 => i_start_IBUF,
       I2 => \current_state_reg_n_0_[0]\,
-      I3 => i_start_IBUF,
+      I3 => \current_state_reg_n_0_[1]\,
       O => current_state(1)
     );
 \current_state[2]_i_1\: unisim.vcomponents.LUT2
@@ -1029,8 +902,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
       INIT => X"FFE0"
     )
         port map (
-      I0 => i_start_IBUF,
-      I1 => \current_state_reg_n_0_[0]\,
+      I0 => \current_state_reg_n_0_[0]\,
+      I1 => i_start_IBUF,
       I2 => current_memory_address0,
       I3 => next_state(0),
       O => \next_state[0]_i_1_n_0\
@@ -1048,7 +921,7 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     );
 \o_address[0]_i_1\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"70"
+      INIT => X"BA"
     )
         port map (
       I0 => \current_state[0]_i_2_n_0\,
@@ -1056,15 +929,16 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
       I2 => \current_state_reg_n_0_[0]\,
       O => \o_address[0]_i_1_n_0\
     );
-\o_address[15]_i_1\: unisim.vcomponents.LUT4
+\o_address[15]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"0001"
+      INIT => X"00000007"
     )
         port map (
-      I0 => \current_state_reg_n_0_[2]\,
-      I1 => i_rst_IBUF,
-      I2 => \current_state_reg_n_0_[1]\,
-      I3 => \current_state[0]_i_2_n_0\,
+      I0 => \o_address[3]_i_3_n_0\,
+      I1 => \current_state_reg_n_0_[0]\,
+      I2 => \current_state_reg_n_0_[2]\,
+      I3 => \current_state_reg_n_0_[1]\,
+      I4 => i_rst_IBUF,
       O => \o_address[15]_i_1_n_0\
     );
 \o_address[3]_i_1\: unisim.vcomponents.LUT3
@@ -1072,20 +946,42 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
       INIT => X"01"
     )
         port map (
-      I0 => \current_state_reg_n_0_[1]\,
-      I1 => i_rst_IBUF,
+      I0 => i_rst_IBUF,
+      I1 => \current_state_reg_n_0_[1]\,
       I2 => \current_state_reg_n_0_[2]\,
-      O => \o_address[3]_i_1_n_0\
+      O => o_address0
     );
 \o_address[3]_i_2\: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"DF"
+      INIT => X"BF"
     )
         port map (
-      I0 => \current_state_reg_n_0_[0]\,
-      I1 => minusOp(3),
-      I2 => \current_state[0]_i_2_n_0\,
+      I0 => minusOp(3),
+      I1 => \o_address[3]_i_3_n_0\,
+      I2 => \current_state_reg_n_0_[0]\,
       O => \o_address[3]_i_2_n_0\
+    );
+\o_address[3]_i_3\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"5555555555555754"
+    )
+        port map (
+      I0 => \o_data[7]_i_3_n_0\,
+      I1 => \address_to_encode[6]_i_4_n_0\,
+      I2 => \current_memory_address_reg_n_0_[2]\,
+      I3 => \current_memory_address_reg_n_0_[3]\,
+      I4 => \o_address[3]_i_4_n_0\,
+      I5 => \address_to_encode[6]_i_3_n_0\,
+      O => \o_address[3]_i_3_n_0\
+    );
+\o_address[3]_i_4\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => \current_memory_address_reg_n_0_[1]\,
+      I1 => \current_memory_address_reg_n_0_[0]\,
+      O => \o_address[3]_i_4_n_0\
     );
 \o_address_OBUF[0]_inst\: unisim.vcomponents.OBUF
      port map (
@@ -1173,7 +1069,7 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
+      CE => o_address0,
       D => \o_address[0]_i_1_n_0\,
       Q => o_address_OBUF(0),
       R => '0'
@@ -1184,8 +1080,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[10]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(10),
       Q => o_address_OBUF(10),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1195,8 +1091,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[11]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(11),
       Q => o_address_OBUF(11),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1206,8 +1102,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[12]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(12),
       Q => o_address_OBUF(12),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1217,8 +1113,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[13]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(13),
       Q => o_address_OBUF(13),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1228,8 +1124,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[14]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(14),
       Q => o_address_OBUF(14),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1239,8 +1135,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[15]_i_2_n_0\,
+      CE => o_address0,
+      D => minusOp(15),
       Q => o_address_OBUF(15),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1250,8 +1146,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[1]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(1),
       Q => o_address_OBUF(1),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1261,8 +1157,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[2]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(2),
       Q => o_address_OBUF(2),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1272,7 +1168,7 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
+      CE => o_address0,
       D => \o_address[3]_i_2_n_0\,
       Q => o_address_OBUF(3),
       R => '0'
@@ -1283,8 +1179,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[4]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(4),
       Q => o_address_OBUF(4),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1294,8 +1190,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[5]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(5),
       Q => o_address_OBUF(5),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1305,8 +1201,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[6]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(6),
       Q => o_address_OBUF(6),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1316,8 +1212,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[7]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(7),
       Q => o_address_OBUF(7),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1327,8 +1223,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[8]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(8),
       Q => o_address_OBUF(8),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1338,8 +1234,8 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     )
         port map (
       C => i_clk_IBUF_BUFG,
-      CE => \o_address[3]_i_1_n_0\,
-      D => \current_memory_address[9]_i_1_n_0\,
+      CE => o_address0,
+      D => minusOp(9),
       Q => o_address_OBUF(9),
       R => \o_address[15]_i_1_n_0\
     );
@@ -1422,10 +1318,10 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
       INIT => X"0001"
     )
         port map (
-      I0 => \current_state_reg_n_0_[2]\,
+      I0 => \current_state_reg_n_0_[0]\,
       I1 => i_rst_IBUF,
       I2 => \current_state_reg_n_0_[1]\,
-      I3 => \current_state_reg_n_0_[0]\,
+      I3 => \current_state_reg_n_0_[2]\,
       O => \o_data[7]_i_1_n_0\
     );
 \o_data[7]_i_10\: unisim.vcomponents.LUT2
@@ -1457,14 +1353,14 @@ i_start_IBUF_inst: unisim.vcomponents.IBUF
     );
 \o_data[7]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"01000101"
+      INIT => X"00000007"
     )
         port map (
-      I0 => \current_state_reg_n_0_[2]\,
-      I1 => i_rst_IBUF,
-      I2 => \current_state_reg_n_0_[1]\,
-      I3 => \address_to_encode[6]_i_2_n_0\,
-      I4 => \current_state_reg_n_0_[0]\,
+      I0 => \current_state_reg_n_0_[0]\,
+      I1 => \address_to_encode[6]_i_2_n_0\,
+      I2 => \current_state_reg_n_0_[2]\,
+      I3 => \current_state_reg_n_0_[1]\,
+      I4 => i_rst_IBUF,
       O => o_data0
     );
 \o_data[7]_i_3\: unisim.vcomponents.LUT6
@@ -1688,22 +1584,21 @@ o_done_OBUF_inst: unisim.vcomponents.OBUF
     );
 o_done_i_1: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"41"
+      INIT => X"01"
     )
         port map (
       I0 => i_rst_IBUF,
-      I1 => \current_state_reg_n_0_[0]\,
-      I2 => \current_state_reg_n_0_[1]\,
+      I1 => \current_state_reg_n_0_[1]\,
+      I2 => \current_state_reg_n_0_[0]\,
       O => o_done0
     );
-o_done_i_2: unisim.vcomponents.LUT3
+o_done_i_2: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"EA"
+      INIT => X"8"
     )
         port map (
-      I0 => \current_state_reg_n_0_[0]\,
+      I0 => \current_state_reg_n_0_[2]\,
       I1 => i_start_IBUF,
-      I2 => \current_state_reg_n_0_[2]\,
       O => o_done_i_2_n_0
     );
 o_done_reg: unisim.vcomponents.FDRE
@@ -1722,38 +1617,39 @@ o_en_OBUF_inst: unisim.vcomponents.OBUF
       I => o_en_OBUF,
       O => o_en
     );
-o_en_i_1: unisim.vcomponents.LUT5
+o_en_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"000000D3"
+      INIT => X"0007000700000007"
     )
         port map (
-      I0 => \current_state[0]_i_2_n_0\,
-      I1 => \current_state_reg_n_0_[1]\,
-      I2 => \current_state_reg_n_0_[0]\,
-      I3 => \current_state_reg_n_0_[2]\,
-      I4 => i_rst_IBUF,
+      I0 => \o_address[3]_i_3_n_0\,
+      I1 => \current_state_reg_n_0_[0]\,
+      I2 => \current_state_reg_n_0_[1]\,
+      I3 => i_rst_IBUF,
+      I4 => \current_state_reg_n_0_[2]\,
+      I5 => i_start_IBUF,
       O => o_en0
     );
 o_en_i_2: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"3022"
+      INIT => X"0074"
     )
         port map (
-      I0 => i_start_IBUF,
-      I1 => \current_state_reg_n_0_[1]\,
-      I2 => o_en_i_3_n_0,
-      I3 => \current_state_reg_n_0_[0]\,
+      I0 => o_en_i_3_n_0,
+      I1 => \current_state_reg_n_0_[0]\,
+      I2 => i_start_IBUF,
+      I3 => \current_state_reg_n_0_[2]\,
       O => o_en_i_2_n_0
     );
 o_en_i_3: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFFFFF00000001"
+      INIT => X"00000000FFFFFFFE"
     )
         port map (
       I0 => \address_to_encode[6]_i_4_n_0\,
       I1 => \current_memory_address_reg_n_0_[3]\,
       I2 => \current_memory_address_reg_n_0_[2]\,
-      I3 => \current_state[0]_i_3_n_0\,
+      I3 => \o_address[3]_i_4_n_0\,
       I4 => \address_to_encode[6]_i_3_n_0\,
       I5 => \o_data[7]_i_3_n_0\,
       O => o_en_i_3_n_0
@@ -1774,14 +1670,13 @@ o_we_OBUF_inst: unisim.vcomponents.OBUF
       I => o_we_OBUF,
       O => o_we
     );
-o_we_i_1: unisim.vcomponents.LUT3
+o_we_i_1: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"08"
+      INIT => X"2"
     )
         port map (
-      I0 => o_en_i_3_n_0,
-      I1 => \current_state_reg_n_0_[0]\,
-      I2 => \current_state_reg_n_0_[1]\,
+      I0 => \current_state_reg_n_0_[0]\,
+      I1 => o_en_i_3_n_0,
       O => o_we_i_1_n_0
     );
 o_we_reg: unisim.vcomponents.FDRE

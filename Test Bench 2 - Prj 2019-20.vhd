@@ -1,4 +1,3 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -19,13 +18,6 @@ signal   enable_wire  		: std_logic;
 signal   mem_we		        : std_logic;
 
 type ram_type is array (65535 downto 0) of std_logic_vector(7 downto 0);
-type int_arr is array (0 to 1) of integer range 0 to 255;
-
-shared variable addrs : int_arr := (42, 33);
-shared variable enc_addrs : int_arr := (42, 181);
-shared variable i : integer range 0 to 255 := 0;
-shared variable is_next : integer range 0 to 2 := 0;
-
 
 -- come da esempio su specifica
 signal RAM: ram_type := (0 => std_logic_vector(to_unsigned( 4 , 8)),
@@ -36,7 +28,7 @@ signal RAM: ram_type := (0 => std_logic_vector(to_unsigned( 4 , 8)),
                          5 => std_logic_vector(to_unsigned( 45 , 8)),
                          6 => std_logic_vector(to_unsigned( 77 , 8)),
                          7 => std_logic_vector(to_unsigned( 91 , 8)),
-                         8 => std_logic_vector(to_unsigned( 4 , 8)),
+                         8 => std_logic_vector(to_unsigned( 42 , 8)),
 			 others => (others =>'0'));
 
 component project_reti_logiche is
@@ -86,20 +78,6 @@ begin
                 mem_o_data <= RAM(conv_integer(mem_address)) after 1 ns;
             end if;
         end if;
-
-     if i=1 and is_next=1 then
-            RAM <= (0 => std_logic_vector(to_unsigned( 4 , 8)),
-                     1 => std_logic_vector(to_unsigned( 13 , 8)),
-                     2 => std_logic_vector(to_unsigned( 22 , 8)),
-                     3 => std_logic_vector(to_unsigned( 31 , 8)),
-                     4 => std_logic_vector(to_unsigned( 37 , 8)),
-                     5 => std_logic_vector(to_unsigned( 45 , 8)),
-                     6 => std_logic_vector(to_unsigned( 77 , 8)),
-                     7 => std_logic_vector(to_unsigned( 91 , 8)),
-                     8 => std_logic_vector(to_unsigned( 33 , 8)),
-         others => (others =>'0'));
-      end if;
-
     end if;
 end process;
 
@@ -119,31 +97,10 @@ begin
     tb_start <= '0';
     wait until tb_done = '0';
 
-    -- Maschera di output = 0 - 129
-    assert RAM(9) = std_logic_vector(to_unsigned( enc_addrs(i) , 8)) report "TEST FALLITO. Expected " & integer'image(to_integer(unsigned(enc_addrs(i)))) & " found " & integer'image(to_integer(unsigned(RAM(9))))  severity failure;
+    -- Maschera di output = 0 - 42
+    assert RAM(9) = std_logic_vector(to_unsigned( 42 , 8)) report "TEST FALLITO. Expected  42  found " & integer'image(to_integer(unsigned(RAM(19))))  severity failure;
 
-    i := i+1;
-    is_next := 1;
-
-    wait for c_CLOCK_PERIOD;
-    wait for c_CLOCK_PERIOD;
-
-    is_next := 0;
-
-    if i=2 then
-        assert false report "Simulation Ended!, TEST PASSATO" severity failure;
-    end if;
-
+    assert false report "Simulation Ended!, TEST PASSATO" severity failure;
 end process test;
 
 end projecttb;
-
-
-
-
-
-
-
-
-
-
