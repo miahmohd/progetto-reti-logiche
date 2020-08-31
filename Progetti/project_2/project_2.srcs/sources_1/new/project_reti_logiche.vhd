@@ -57,7 +57,7 @@ begin
     main: process(i_clk, i_rst) is
 
         variable is_to_encode             : integer range 0 to 1;
-        variable address_offset           : integer range 0 to 255;
+        variable address_offset           : integer range -255 to 255;
 
         procedure encode_address is
         begin

@@ -6092,11 +6092,11 @@ begin
 if i < 1500 then
     wait for 100 ns;
     wait for c_CLOCK_PERIOD;
-    if i=0 then
+ 
     tb_rst <= '1';
     wait for c_CLOCK_PERIOD;
     tb_rst <= '0';
-    end if;
+
     wait for c_CLOCK_PERIOD;
     tb_start <= '1';
     wait for c_CLOCK_PERIOD;

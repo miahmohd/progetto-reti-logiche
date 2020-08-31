@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Aug 24 13:07:06 2020
+| Date         : Mon Aug 31 21:18:02 2020
 | Host         : Miah-Desktop running 64-bit major release  (build 9200)
 | Command      : report_utilization -file project_reti_logiche_utilization_synth.rpt -pb project_reti_logiche_utilization_synth.pb
 | Design       : project_reti_logiche
@@ -151,14 +151,14 @@ Table of Contents
 +----------+------+---------------------+
 | FDRE     |   51 |        Flop & Latch |
 | OBUF     |   27 |                  IO |
-| LUT4     |   15 |                 LUT |
-| LUT1     |   15 |                 LUT |
-| LUT2     |   12 |                 LUT |
+| LUT1     |   16 |                 LUT |
+| LUT2     |   11 |                 LUT |
 | IBUF     |   10 |                  IO |
-| LUT6     |    8 |                 LUT |
-| LUT3     |    8 |                 LUT |
+| LUT6     |    9 |                 LUT |
+| LUT5     |    9 |                 LUT |
+| LUT4     |    8 |                 LUT |
+| LUT3     |    6 |                 LUT |
 | CARRY4   |    6 |          CarryLogic |
-| LUT5     |    4 |                 LUT |
 | FDCE     |    3 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
